@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(107, 6, 6);
+}
+::-webkit-scrollbar {
+    display: none;
+} 
+.burger-bg{ 
+
+    /* background-image: url(./images/burger_bg.jpg); */
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative
+    /* background-color: gray; */
+}
+.buttons{
+    display: flex;
+}
+.btn-enter{
+    background-color: brown;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    margin: auto;
+    
+}
+.mobileNo{
+    font-size: large;
+    margin-top: 10px;
+    /* margin-bottom: 5px; */
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute; 
+    left: 10%;
+    top: 80%;
+    background-color: rgb(107, 6, 6,0.7);
+    /* opacity: 0.8; */
+    /* transform: translate(-50%, -50%); */
+
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+#mobile{
+    margin-bottom: 5px;
+}
+#password{
+    margin-bottom: 10px;
+}
+.categories{
+    width: 60%;
+    display: flex;
+    margin: auto;
+    padding: 20px;
+}

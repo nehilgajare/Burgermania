@@ -1,0 +1,152 @@
+/* General Body Styles */
+body {
+    background-color: rgb(107, 6, 6);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Set a default font */
+}
+
+/* Hide Scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Heading Styles */
+h1 {
+    color: white;
+    text-align: center;
+    animation-name: headingAni;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+/* Animation for Heading */
+@keyframes headingAni {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Form and List Styles */
+.burger-form, .burger-list {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Styles */
+input[type="text"], input[type="number"], select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+/* Input Focus Styles */
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+    border-color: #28a745; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styles */
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+/* Button Hover Styles */
+button:hover {
+    background: #218838;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* List Item Styles */
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+}
+
+/* Delete Button Styles */
+.delete-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+/* Delete Button Hover Styles */
+.delete-btn:hover {
+    background: #c82333;
+}
+
+/* Modal Styles (for future use) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Modal Close Button Styles */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

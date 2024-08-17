@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgers Admin Dashboard</title>
+    <link rel="stylesheet" href="admin-dashboard.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome Admin</h1>
+        <!-- <label for="burgerCategory">Select Category:</label>
+        <select id="burgerCategory">
+            <option value="Veg">Veg</option>
+            <option value="Non-Veg">Non-Veg</option>
+            <option value="Eggs">Eggs</option>
+        </select> -->
+        <div class="burger-form">
+            <h2>Add a New Burger</h2>
+            <form id="burgerForm">
+                <input type="text" id="burgerName" placeholder="Burger Name" required>
+                <!-- <input type="text" id="burgerDescription" placeholder="Description" required> -->
+                <label for="burgerCategory">Category:</label>
+                <select id="burgerCategory" name="burgerCategory" required>
+                    <option value="">Select Category</option>
+                    <option value="Veg">Veg</option>
+                    <option value="Non-Veg">Non-Veg</option>
+                    <option value="Eggs">Eggs</option>
+                </select>
+
+                <input type="number" id="burgerPrice" placeholder="Price" required>
+                <input type="text" id="burgerImagelink" placeholder="Image Link" required>
+                <button type="submit">Add Burger</button>
+            </form>
+        </div>
+        <div class="burger-list">
+            <h2>Burger Collection</h2>
+            <ul id="burgerCollection"></ul>
+        </div>
+    </div>
+
+    <script src="admin-dashboard.js"></script>
+</body>
+
+</html>

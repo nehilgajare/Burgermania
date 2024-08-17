@@ -1,0 +1,62 @@
+body {
+  background-color: rgb(107, 6, 6);
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f5f5;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+p {
+  text-align: center;
+  color: white;
+}
+
+
+#checkout{
+  width: 25%;
+  margin:auto;
+  margin-top: 40px;
+  padding: 20px;
+  /* border: 2px solid black; */
+  border-radius: 5px;
+  text-align: center;
+  /* background-color: gray; */
+}

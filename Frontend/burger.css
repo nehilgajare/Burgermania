@@ -1,0 +1,140 @@
+body{
+    background-color: rgb(107, 6, 6);
+}
+h1{
+    color: white;
+    text-align: center;
+    text-decoration: double;
+    /* CSS to style the heading element and create the transition effect */
+    animation-name: headingAni;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+    right: 0;
+    top:0;
+    /* position: absolute; or 'fixed' or 'relative' */
+    /* right: 90%; /* Start from the center-right */
+    /* transform: translateX(-50%); Center the element */
+    /* transition: transform 1s ease; Transition effect for 1 second */
+
+}
+@keyframes headingAni{
+  from{
+    left:100%;
+  }
+  to{
+      left:0%
+  }
+}
+
+.burger-category{
+  /* animation: zoomin; */
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    animation-name: headingAni;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+    right: 0;
+    top:0;
+    /* align-items: center; */
+
+}
+
+.categories{
+    width: 60%;
+    padding: 12px;
+    border: 2px solid rgb(57, 24, 24);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.viewCart{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#burger{
+    padding: 10px;
+    text-align: center;
+}
+
+option{
+    font-size: 17px;
+
+    /* padding: 50px; */
+}
+
+
+
+  #burger-container {
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    /* border: 1px solid #ddd; */
+}
+
+
+/* Burger Card  */
+.card {
+    box-shadow: 5px 5px 3px black;
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 10px;
+    overflow: hidden;
+    width: 300px;
+    color: black;
+    text-align: center;
+    
+  }
+  
+  /* Responsive grid layout */
+  .card-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  /* Card image */
+  .card:hover{
+    transform: scale(1.05);
+  }
+  .card img {
+    width: 100%;
+    /* height: 50%; */
+  }
+  
+  /* Card content */
+  .card-content {
+    padding: 2px 16px;
+  }
+  
+  /* Add to Cart button */
+  .card button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .card button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 600px) {
+    .card-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .viewCart{
+    padding: 5px;
+  }
