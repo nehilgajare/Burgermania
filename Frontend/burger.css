@@ -1,6 +1,9 @@
 body{
     background-color: rgb(107, 6, 6);
 }
+::-webkit-scrollbar {
+  display: none;
+} 
 h1{
     color: white;
     text-align: center;

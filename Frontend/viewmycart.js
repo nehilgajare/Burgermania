@@ -119,7 +119,7 @@ async function placeOrder() {
             '\nTotal Price after Discount: Rs. ' + discount.totalAfterDiscount + '/-');
 
         // Optionally, redirect to a confirmation page or refresh the current page
-        // window.location.href = 'order-confirmation.html';
+         window.location.href = 'burger.html';
     } catch (error) {
         console.error('Error placing order:', error);
         alert('Failed to place order. Please try again.');
